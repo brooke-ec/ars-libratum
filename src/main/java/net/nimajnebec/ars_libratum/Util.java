@@ -8,9 +8,7 @@ public class Util {
     public static void damageItem(UseOnContext context, int amount) {
         Player player = context.getPlayer();
         if (player instanceof ServerPlayer) {
-            context.getItemInHand().hurtAndBreak(amount, player, (p) -> {
-                player.broadcastBreakEvent(context.getHand());
-            });
+            context.getItemInHand().hurtAndBreak(amount, player, (p) -> player.broadcastBreakEvent(context.getHand()));
         }
     }
 }
