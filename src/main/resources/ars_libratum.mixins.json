@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.nimajnebec.ars_libratum.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "ars-libratum.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
