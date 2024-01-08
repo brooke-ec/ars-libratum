@@ -6,6 +6,8 @@
   "refmap": "ars-libratum.refmap.json",
   "mixins": [
     "ItemMixin",
+    "PlayerMixin",
+    "JumpingRingMixin",
     "StableWarpScrollMixin"
   ],
   "client": [
