@@ -15,7 +15,7 @@ public class Config
             .defineInRange("stable_warp_scroll_uses", 1, 0, Integer.MAX_VALUE);
 
     private static final ForgeConfigSpec.IntValue STABLE_WARP_SCROLL_STACK = BUILDER
-            .comment("The max size Stabilized Warp Scrolls can be stacked to. Only applies if stable_warp_scroll_uses <= 1")
+            .comment("The max size Stabilized Warp Scrolls can be stacked to. Only applies if stable_warp_scroll_uses < 2")
             .defineInRange("stable_warp_scroll_stack", 1, 0, Item.MAX_STACK_SIZE);
 
     private static final ForgeConfigSpec.IntValue WARP_SCROLL_STACK = BUILDER
