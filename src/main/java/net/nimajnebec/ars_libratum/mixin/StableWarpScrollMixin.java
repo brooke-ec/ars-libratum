@@ -15,7 +15,7 @@ public abstract class StableWarpScrollMixin {
 
     @Inject(method = "useOn", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;playSound(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V", shift = At.Shift.AFTER))
     private void consume(UseOnContext context, CallbackInfoReturnable<InteractionResult> ci) {
-        if (Config.warpScrollUses == 1) context.getItemInHand().shrink(1);
-        else if (Config.warpScrollUses > 1) Util.damageItem(context, 1);
+        if (Config.stableWarpScrollUses == 1) context.getItemInHand().shrink(1);
+        else if (Config.stableWarpScrollUses > 1) Util.damageItem(context, 1);
     }
 }
