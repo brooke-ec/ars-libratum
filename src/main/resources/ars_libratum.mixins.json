@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "net.nimajnebec.ars_libratum.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "ars-libratum.refmap.json",
+  "refmap": "ars_libratum.refmap.json",
   "mixins": [
     "ItemMixin",
     "PlayerMixin",
